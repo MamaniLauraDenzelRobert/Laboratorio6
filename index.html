@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>Práctica Web</h1>
+        <p>Denzel Robert Mamani Laura</p>
+    </header>
+    <div class="container">
+        <nav class="left-menu">
+            <ul>
+                <li><a href="#">Enlace 1</a></li>
+                <li><a href="#">Enlace 2</a></li>
+                <li><a href="#">Enlace 3</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Respuestas de la Práctica</h2>
+            <section id="ejercicio1">
+                <h3>Ejercicio 1: Generar Serie de Fibonacci</h3>
+                <form id="fibonacciForm">
+                    <label for="numTerms">Número de términos:</label>
+                    <input type="number" id="numTerms" name="numTerms" min="1" required>
+                    <button type="submit">Generar Serie</button>
+                </form>
+                <div id="fibonacciResult"></div>
+            </section>
+            <section id="ejercicio2">
+                <h3>Ejercicio 2: Generar Serie Binaria</h3>
+                <form id="binaryForm">
+                    <label for="numBinaryTerms">Número de términos:</label>
+                    <input type="number" id="numBinaryTerms" name="numBinaryTerms" min="1" required>
+                    <button type="submit">Generar Serie</button>
+                </form>
+                <div id="binaryResult"></div>
+            </section>
+            <section id="ejercicio3">
+                <h3>Ejercicio 3: Generar Factoriales y Calcular Suma</h3>
+                <form id="factorialForm">
+                    <label for="numFactorials">Número N:</label>
+                    <input type="number" id="numFactorials" name="numFactorials" min="1" required>
+                    <button type="submit">Calcular Factoriales y Suma</button>
+                </form>
+                <div id="factorialResult"></div>
+            </section>
+            <section id="ejercicio4">
+            <h3>Ejercicio 4: Rotar Número</h3>
+            <form id="rotateForm">
+            <label for="numberInput">Número:</label>
+            <input type="text" id="numberInput" name="numberInput" required>
+            <label for="rotateSteps">Pasos de rotación:</label>
+            <input type="number" id="rotateSteps" name="rotateSteps" min="1" required>
+            <button type="submit">Rotar</button>
+            </form>
+            <div id="rotateResult"></div>
+            </section>
+            <section id="ejercicio5">
+                <h3>Ejercicio 5: Rotar Dígitos Pares</h3>
+                <form id="evenDigitRotateForm">
+                    <label for="evenDigitNumber">Número (mínimo 6 dígitos):</label>
+                    <input type="text" id="evenDigitNumber" name="evenDigitNumber" minlength="6" required>
+                    <button type="submit">Rotar Dígitos Pares</button>
+                </form>
+                <div id="evenDigitRotateResult"></div>
+            </section>
+            <section id="ejercicio6">
+                <h3>Ejercicio 6: Mostrar Dígitos Repetidos</h3>
+                <form id="repeatedDigitsForm">
+                    <label for="repeatedDigitsNumber">Número (mayor que 100):</label>
+                    <input type="number" id="repeatedDigitsNumber" name="repeatedDigitsNumber" min="101" required>
+                    <button type="submit">Mostrar Dígitos Repetidos</button>
+                </form>
+                <div id="repeatedDigitsResult"></div>
+            </section>
+            <section id="ejercicio7">
+                <h3>Ejercicio 7: Verificar si es Capicúa</h3>
+                <form id="palindromeForm">
+                    <label for="palindromeNumber">Número entero positivo:</label>
+                    <input type="number" id="palindromeNumber" name="palindromeNumber" min="0" required>
+                    <button type="submit">Verificar</button>
+                </form>
+                <div id="palindromeResult"></div>
+            </section>
+            <section id="ejercicio8">
+                <h3>Ejercicio 8: Verificar si es Primo</h3>
+                <form id="primeForm">
+                    <label for="primeNumber">Número entero positivo:</label>
+                    <input type="number" id="primeNumber" name="primeNumber" min="2" required>
+                    <button type="submit">Verificar</button>
+                </form>
+                <div id="primeResult"></div>
+            </section>
+            <section id="ejercicio9">
+                <h3>Ejercicio 9: Generar Números Primos hasta N</h3>
+                <form id="generatePrimesForm">
+                    <label for="generatePrimesNumber">Número N:</label>
+                    <input type="number" id="generatePrimesNumber" name="generatePrimesNumber" min="2" required>
+                    <button type="submit">Generar Primos</button>
+                </form>
+                <div id="generatePrimesResult"></div>
+            </section>
+            <section id="ejercicio10">
+                <h3>Ejercicio 10: Vector Fibonacci</h3>
+                <form id="fibonacciVectorForm">
+                    <label for="fibonacciVectorNumber">Número N:</label>
+                    <input type="number" id="fibonacciVectorNumber" name="fibonacciVectorNumber" min="1" required>
+                    <button type="submit">Generar Serie Fibonacci</button>
+                </form>
+                <div id="fibonacciVectorResult"></div>
+            </section>
+            <section id="ejercicio11">
+                <h3>Ejercicio 11: Generar Serie Exponencial</h3>
+                <form id="exponentialSeriesForm">
+                    <label for="exponentialBase">Base:</label>
+                    <input type="number" id="exponentialBase" name="exponentialBase" required>
+                    <label for="exponentialTerms">Número de términos:</label>
+                    <input type="number" id="exponentialTerms" name="exponentialTerms" min="1" required>
+                    <button type="submit">Generar Serie Exponencial</button>
+                </form>
+                <div id="exponentialSeriesResult"></div>
+            </section>
+            <section id="ejercicio12">
+                <h3>Ejercicio 12: Verificar si una Palabra es Palíndromo</h3>
+                <form id="palindromeWordForm">
+                    <label for="palindromeWord">Palabra:</label>
+                    <input type="text" id="palindromeWord" name="palindromeWord" required>
+                    <button type="submit">Verificar</button>
+                </form>
+                <div id="palindromeWordResult"></div>
+            </section>
+            <section id="ejercicio13">
+                <h3>Ejercicio 13: Invertir una Cadena de Caracteres</h3>
+                <form id="reverseStringForm">
+                    <label for="stringInput">Cadena de caracteres:</label>
+                    <input type="text" id="stringInput" name="stringInput" required>
+                    <button type="submit">Invertir</button>
+                </form>
+                <div id="reverseStringResult"></div>
+            </section>
+            <section id="ejercicio14">
+                <h3>Ejercicio 14: Calculadora</h3>
+                <form id="calculatorForm">
+                    <label for="operand1">Operando 1:</label>
+                    <input type="number" id="operand1" name="operand1" required>
+                    
+                    <label for="operation">Operación:</label>
+                    <select id="operation" name="operation" required>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                        <option value="!">Factorial</option>
+                        <option value="^">Exponente (x^y)</option>
+                    </select>
+                    
+                    <label for="operand2">Operando 2:</label>
+                    <input type="number" id="operand2" name="operand2">
+                    
+                    <button type="submit">Calcular</button>
+                </form>
+                <div id="calculatorResult"></div>
+            </section>
+            <section id="ejercicio15">
+                <h3>Ejercicio 15: Convertir Entero a Números Romanos</h3>
+                <form id="romanNumeralForm">
+                    <label for="integerInput">Número entero positivo:</label>
+                    <input type="number" id="integerInput" name="integerInput" min="1" required>
+                    <button type="submit">Convertir</button>
+                </form>
+                <div id="romanNumeralResult"></div>
+            </section>
+            <section id="ejercicio16">
+                <h3>Ejercicio 16: Generar Matriz de Pascal</h3>
+                <form id="pascalTriangleForm">
+                    <label for="pascalRows">Número de filas:</label>
+                    <input type="number" id="pascalRows" name="pascalRows" min="1" required>
+                    <button type="submit">Generar Matriz de Pascal</button>
+                </form>
+                <div id="pascalTriangleResult"></div>
+            </section>
+        </main>
+        <nav class="right-menu">
+            <ul>
+                <li><a href="#">Enlace A</a></li>
+                <li><a href="#">Enlace B</a></li>
+                <li><a href="#">Enlace C</a></li>
+            </ul>
+        </nav>
+    </div>
+    <footer>
+        <p>Pie de página</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
